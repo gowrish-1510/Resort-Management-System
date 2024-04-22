@@ -1,0 +1,162 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../assets/suite.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    animation: image-switch 10s infinite ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Outer-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    height: 25px;
+    font-size: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.inner span {
+    position: relative;
+    color: cyan;
+    font-weight: bold;
+    animation: verticalslide 7s ease infinite;
+}
+
+.booking {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 18px 15px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    top: 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.inner-box {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 40px);
+    gap: 30px
+}
+
+.Home {
+    position: relative;
+    top: 20px;
+    background-color: crimson;
+    border-radius: 25px;
+    height: 40px;
+    width: 120px;
+    font-weight: 300;
+}
+
+.Home:hover {
+    transform: translateY(-3px);
+    transition: all 0.7s ease-in-out;
+    background: transparent;
+    color: crimson;
+}
+
+a{
+    text-decoration: none;
+    color: oldlace;
+}
+
+#h1 {
+    font-weight: bold;
+    color: chocolate;
+}
+
+#book {
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: orangered;
+    border: 2px solid red;
+    position: relative;
+    top: 20px;
+    left: 265px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#book:hover {
+    background-color: darkorange;
+}
+
+@keyframes image-switch {
+    0% {
+        background-image: url(../assets/suite.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/luxury.jpg);
+    }
+
+    100% {
+        background-image: url(../assets/scenery.webp);
+    }
+}
+
+@keyframes verticalslide {
+
+    0%,
+    100% {
+        top: 0px;
+    }
+
+    25% {
+        top: -30px
+    }
+
+    50% {
+        top: -60px
+    }
+
+    75% {
+        top: -90px
+    }
+
+    95% {
+        top: -90px
+    }
+}
+
+footer {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 20px;
+}

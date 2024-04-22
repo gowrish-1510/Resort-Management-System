@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/rooms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Rooms</title>
+
+</head>
+
+<body>
+    <h1>ENJOY YOUR <span id="h1">STAY WITH US</span></h1>
+    <div class="content">
+        <div class="Outer-heading">
+            <h1>Experience world's finest</h1>
+            <div class="inner">
+                <span>
+                    SUITE<br>
+                    LUXURY ROOMS<br>
+                    DELUXE ROOMS<br>
+                </span>
+            </div>
+            <button class="Home" ><a href="/">Go to Home</a></button>
+        </div>
+        <div class="booking">
+            <h2>Book here!</h2>
+            <form action="/rooms/submitted" method="post">
+                <div class="inner-box">
+                    <input id="first-name" class="inputs" type="text" name="first_name" placeholder="&#128100 | First name" required>
+                    <input id="last-name" class="inputs" type="text" name="last_name" placeholder="&#128100 | Last name" required>
+                    <input id="phone-number" class="inputs" type="number" name="phone_number" placeholder="&#128222 | Phone number" required>
+                    <input id="email" class="inputs" type="email" name="email" placeholder="&#128489 | Email" required>
+                    <input id="departure" class="inputs" type="date" name="departure" placeholder="Departure date" required>
+                    <input id="arrival" class="inputs" type="date" name="arrival" placeholder="Arrival date" required>
+                    <input id="no-guests" class="inputs" type="number" name="no_guests" placeholder="&#128101 | No. of guests" required>
+                    <select name="room_type" required>
+                        <option value=" Suite ">Suite</option>
+                        <option value="Luxury">Luxury</option>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                    </select>
+
+                </div>
+                <button id="book" type="submit">Book now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright Moonline Paradize | All rights reserved | 2024-2030</span>
+    </footer>
+
+    <script src="./JS/rooms.js" charset="UTF-8"></script>
+</body>
+
+</html>

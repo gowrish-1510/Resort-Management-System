@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/party_hall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap" rel="stylesheet">
+     
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1>Paradize Party</h1>
+        <div class="content">
+            <div class="info">
+                <h2 id="content">Create memories that last forever </h2>
+                
+                <button  class="out"><a href="/">Go to Home</a></button>
+            </div>
+            <div class="forms">
+                <h2>Fill in to party!</h2>
+                <form action="/party_hall/submitted" method="post">
+                    <div class="inner-forms">
+                        <input id="first-name" class="inputs" name="first_name" type="text" placeholder="&#128100 | First name" required>
+                        <input id="last-name" class="inputs" name="last_name" type="text" placeholder="&#128100 | Last name" required>
+                        <input id="phone-number" class="inputs" name="phone_number" type="number" placeholder="&#128222 | Phone number" required>
+                        <input id="email" class="inputs" type="email" name="email" placeholder="&#128489 | Email" required>
+                        <input id="date" class="inputs" type="date" name="arrdate" placeholder=" Date" required>
+                        <select name="event_time" required>
+                            <option value=" Morning ">Morning</option>
+                            <option value="Evening" >Evening</option>
+                        </select>
+                        <select name="event_type" required>
+                            <option value=" Birthday ">Birthday</option>
+                            <option value="Reception">Reception</option>
+                            <option value="Anniversary">Anniversary</option>
+                        </select>
+                        <select name="cuisine" required>
+                            <option value=" North Indian">North Indian Cuisine</option>
+                            <option value="South Indian">South Indian Cuisine</option>
+                            <option value="Continental">Continental</option>
+                        </select>
+                    </div>
+                    <button id="button" type="submit" >Party Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
